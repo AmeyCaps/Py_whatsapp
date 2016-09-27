@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
-message ="Hello :3"  # your message 
+message ="Hello !!"  # your message 
 n = 5                # Send n number of times
 
 def initiate():
@@ -17,7 +17,7 @@ def stop():
 
 def send_message():
 	
-	group= ""  # name of person or group to send message 
+	group= ""  # enter name of person or group to send message 
 	search = driver.find_element_by_xpath("//*[@data-tab=2]")  
 	search.send_keys(group)
 	time.sleep(10)
